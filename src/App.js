@@ -3,7 +3,7 @@ import Number from './components/Number';
 
 const App = () => {
   return (
-    <div>
+    <div className='steps'>
       <Number />
     </div>
   )
