@@ -1,13 +1,11 @@
 import React from 'react';
-import { useState } from 'react';
+// import { useState } from 'react';
 import Text from './Text';
 import Button from './Button';
 
-const Number = ({ hide }) => {
-  const [num, setNum] = useState(1);
+const Number = ({ num, setNum }) => {
   return (
     <>
-
       <div className='numbers' >
         <div className={`${num === 1 && "active"}`}>1</div>
         <div className={`${num === 2 && "active"}`}>2</div>

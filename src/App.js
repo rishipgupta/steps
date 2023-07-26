@@ -3,13 +3,14 @@ import { useState } from 'react';
 import Number from './components/Number';
 
 const App = () => {
-  const [hide, setHide] = useState(false)
+  const [hide, setHide] = useState(true);
+  const [num, setNum] = useState(1);
   return (
     <>
       <button className="close" onClick={() => setHide(!hide)}>x</button>
       {hide && (
         <div className='steps'>
-          <Number />
+          <Number num={num} setNum={setNum} />
         </div>
       )
       }
