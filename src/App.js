@@ -7,7 +7,7 @@ const App = () => {
   const [num, setNum] = useState(1);
   return (
     <>
-      <button className="close" onClick={() => setHide(!hide)}>x</button>
+      <button className="close" onClick={() => setHide(hide => !hide)}>x</button>
       {hide && (
         <div className='steps'>
           <Number num={num} setNum={setNum} />
