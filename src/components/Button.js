@@ -5,13 +5,13 @@ const Button = ({ num, setNum }) => {
     <div className='buttons'>
       <button style={{ backgroundColor: "#7950f2", color: "#fff" }} onClick={() => {
         if (num > 1) {
-          setNum(num - 1)
+          setNum(currentNum => currentNum - 1)
         }
       }}
       >Previous</button>
       <button style={{ backgroundColor: "#7950f2", color: "#fff" }} onClick={() => {
         if (num < 3) {
-          setNum(num + 1)
+          setNum(currentNum => currentNum + 1)
         }
       }}>Next</button>
     </div>
