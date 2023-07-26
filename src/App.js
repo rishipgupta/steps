@@ -5,10 +5,15 @@ import Number from './components/Number';
 const App = () => {
   const [hide, setHide] = useState(false)
   return (
-    <div className='steps'>
+    <>
       <button className="close" onClick={() => setHide(!hide)}>x</button>
-      <Number hide={hide} />
-    </div>
+      {hide && (
+        <div className='steps'>
+          <Number />
+        </div>
+      )
+      }
+    </>
   )
 }
 
